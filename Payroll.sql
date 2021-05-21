@@ -22,3 +22,8 @@ insert into employee_payroll values
 ('Charlie',300000.0,'2021-05-21')
 
 select * from employee_payroll;
+
+insert into employee_payroll(salary,name,start) values
+(100000.0,'Mark','2017-01-03')
+
+select salary from employee_payroll where name = 'billi'
