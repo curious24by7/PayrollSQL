@@ -33,3 +33,10 @@ ADD Gender char(2)
 
 update employee_payroll set Gender = 'M' where name = 'Billi' or name = 'Charlie'or name = 'Mark';
 update employee_payroll set Gender = 'F' where name = 'Terisa';
+
+select sum(salary) from employee_payroll where gender = 'M' group by Gender;
+select avg(salary) from employee_payroll where gender = 'M' group by Gender;
+select min(salary) from employee_payroll where gender = 'M' group by Gender;
+select max(salary) from employee_payroll where gender = 'M' group by Gender;
+select count(salary) from employee_payroll where gender = 'M' group by Gender;
+select count(salary) from employee_payroll where gender = 'F' group by Gender;
