@@ -39,3 +39,4 @@ update employee_payroll set deductions=2500, taxable_pay=0, net_pay=30000, tax=4
 update employee_payroll set deductions=1500, taxable_pay=0, net_pay=30000, tax=70000, department= 'quality', Phone = 5913564986, address = '153  Clarksburg Park Road' where name = 'Terisa';
 update employee_payroll set deductions=1800, taxable_pay=0, net_pay=70000, tax=50000, department= 'technical', Phone = 3213214986, address = '207  Alpaca Way' where name = 'Mohan';
 select*from employee_payroll
+select sum (basic_pay) from employee_payroll where gender='M'
